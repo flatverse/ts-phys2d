@@ -1,5 +1,5 @@
 {
-  "name": "ts-phys2d",
+  "name": "@flatverse/ts-phys2d",
   "version": "0.0.0",
   "description": "",
   "main": "dist/index.js",
