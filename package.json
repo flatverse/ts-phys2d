@@ -1,0 +1,16 @@
+{
+  "name": "ts-phys2d",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "build-for-publish": "tsc --outDir dist; printf $(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g') >> dist/version.txt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cody Thompson",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
