@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "main": "dist/index.js",
+  "files": ["dist"],
   "scripts": {
     "build": "tsc",
     "build-for-publish": "tsc --outDir dist; printf $(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g') >> dist/version.txt",
